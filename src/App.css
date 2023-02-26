@@ -13,6 +13,11 @@ body {
   background: var(--color-bg);
 }
 
+a {
+  color: unset;
+  text-decoration: none;
+}
+
 .gradient__bg {
   /* ff 3.6+ */
   background: -moz-radial-gradient(
