@@ -15,6 +15,14 @@ module.exports = {
     'comma-dangle': 0,
     'prettier/prettier': 'error',
     'object-curly-newline': 'off',
+    'arrow-body-style': 'off',
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/function-component-definition': [
+      'error',
+      {
+        namedComponents: ['function-declaration', 'arrow-function'],
+        unnamedComponents: 'arrow-function',
+      },
+    ],
   },
 }
