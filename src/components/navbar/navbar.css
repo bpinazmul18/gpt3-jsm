@@ -30,7 +30,7 @@
 
 .gpt3__navbar-links_container p,
 .gpt3__navbar-sign p,
-.gpt3__navbar-menu__container p {
+.gpt3__navbar-menu_container p {
   color: #fff;
   font-family: var(--font-family);
   font-size: 1.8rem;
@@ -42,7 +42,7 @@
 }
 
 .gpt3__navbar-sign button,
-.gpt3__navbar-menu__container button {
+.gpt3__navbar-menu_container button {
   font-family: var(--font-family);
   color: #fff;
   padding: 1.65rem 4.46rem;
@@ -66,7 +66,7 @@
   cursor: pointer;
 }
 
-.gpt3__navbar-menu__container {
+.gpt3__navbar-menu_container {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -76,18 +76,18 @@
   padding: 2rem;
   position: absolute;
   top: 4rem;
-  left: 0;
+  right: 0;
   margin-top: 1rem;
   min-width: 21rem;
   border-radius: 0.5rem;
-  box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
 }
 
-.gpt3__navbar-menu__container p {
+.gpt3__navbar-menu_container p {
   margin: 1rem 0;
 }
 
-.gpt3__navbar-menu__container-links-sign {
+.gpt3__navbar-menu_container-links-sign {
   display: none;
 }
 
@@ -98,5 +98,29 @@
 
   .gpt3__navbar-menu {
     display: flex;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .gpt3__navbar {
+    padding: 2rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .gpt3__navbar {
+    padding: 2rem;
+  }
+
+  .gpt3__navbar-sign {
+    display: none;
+  }
+
+  .gpt3__navbar-menu_container {
+    top: 2rem;
+  }
+
+  .gpt3__navbar-menu_container-links-sign {
+    display: block;
   }
 }
