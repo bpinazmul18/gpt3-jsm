@@ -1,37 +1,40 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import { Feature } from '../../components/index'
 
 import './whatGPT3.css'
 
 const WhatGPT3 = () => {
+  const { t } = useTranslation()
+
   return (
     <div className="gpt3__whatgpt3 section__margin">
       <div className="gpt3__whatgpt3-feature">
         <Feature
-          title="What is GPT-3"
-          text="We so opinion friends me message as delight. Whole front do of plate heard oh ought. His defective nor convinced residence own. Connection has put impossible own apartments boisterous. At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by."
+          title={t('gpt3__whatgpt3.gpt3__whatgpt3-feature.title')}
+          text={t('gpt3__whatgpt3.gpt3__whatgpt3-feature.text')}
         />
       </div>
 
       <div className="gpt3__whatgpt3-heading">
         <h1 className="gradient__text">
-          The possibilities are beyond your imagination
+          {t('gpt3__whatgpt3.gpt3__whatgpt3-heading.title')}
         </h1>
-        <p>Explore The Library</p>
+        <p>{t('gpt3__whatgpt3.gpt3__whatgpt3-heading.text')}</p>
       </div>
 
       <div className="gpt3__whatgpt3-container">
         <Feature
-          title="Chatbots"
-          text="We so opinion friends me message as delight. Whole front do of plate heard oh ought. "
+          title={t('gpt3__whatgpt3.gpt3__whatgpt3-container.1.title')}
+          text={t('gpt3__whatgpt3.gpt3__whatgpt3-container.1.text')}
         />
         <Feature
-          title="Knowledgebase"
-          text="At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b"
+          title={t('gpt3__whatgpt3.gpt3__whatgpt3-container.2.title')}
+          text={t('gpt3__whatgpt3.gpt3__whatgpt3-container.2.text')}
         />
         <Feature
-          title="Education"
-          text="At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b"
+          title={t('gpt3__whatgpt3.gpt3__whatgpt3-container.3.title')}
+          text={t('gpt3__whatgpt3.gpt3__whatgpt3-container.3.text')}
         />
       </div>
     </div>
