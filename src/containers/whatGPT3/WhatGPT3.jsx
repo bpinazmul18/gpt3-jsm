@@ -8,7 +8,7 @@ const WhatGPT3 = () => {
   const { t } = useTranslation()
 
   return (
-    <div className="gpt3__whatgpt3 section__margin">
+    <div className="gpt3__whatgpt3 section__margin" id="wpgt3">
       <div className="gpt3__whatgpt3-feature">
         <Feature
           title={t('gpt3__whatgpt3.gpt3__whatgpt3-feature.title')}
