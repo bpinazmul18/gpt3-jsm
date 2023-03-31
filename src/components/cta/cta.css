@@ -50,3 +50,9 @@
     margin: 2rem 0;
   }
 }
+
+@media only screen and (max-width: 550px) {
+  .gpt3__cta {
+    margin: 4rem 2rem;
+  }
+}
